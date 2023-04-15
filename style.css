@@ -1,0 +1,137 @@
+
+#key li {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  margin: 100px;
+  margin-left: 50px;
+}
+
+.homeimg {
+  margin-left: 300px;
+  text-align: left;
+}
+
+.about {
+  margin-left: 400px;
+  text-align: left;
+}
+
+.aboutimg {
+  margin: 40px;
+  text-align: left;
+}
+
+.fade-in-image { animation: fadeIn 2s;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.sketchrowtwo {
+margin-left: 300px
+}
+
+.sketch {
+  text-align: ;
+  width: 120px;
+}
+
+.mail {
+  margin-left: 1000px;
+}
+
+.digital {
+  margin-left: 200px;
+}
+
+.fade-in-image-delayed { animation: fadeIn 3.5s;}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.tut {
+  margin-left: 230px;
+}
+
+.tut-text {
+  width: 500px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+
+/*CAROUSEL*/
+
+.carousel {
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+ margin-bottom: 50px;
+}
+
+.slides {
+  display: none;
+}
+
+/* next and prev but */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* next button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #9fb8cb;
+}
+
+
+/* dots */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #2c7bb7;
+}
+
+/* fades */
+.fade {
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
